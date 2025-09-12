@@ -12,7 +12,13 @@ class Solution:
                 current_sum-=nums[left]
         
                 left+=1
-        return 0 if min_length == float('inf') else min_length        
+        if min_length==float('inf'):
+             return 0
+        else:
+             return min_length    
+
+                    
+              
 
 
 
